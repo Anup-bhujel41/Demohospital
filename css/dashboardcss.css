@@ -1,0 +1,63 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 70px 0 0 10px;
+    border-right: 1px solid #d3d3d3;
+    width: 20%;
+    overflow: hidden;
+}
+
+.left-sidebar{
+    position: sticky;
+    top: 0;
+
+}
+
+.sidebar-nav{
+    color: #333;
+    font-weight: 500;
+}
+
+main{
+    padding-top: 90px;
+    float: right;
+}
+
+main.card{
+    margin-bottom: 20px;
+}
+
+.navlink{
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+.admin-main{
+    width: 80%;
+    float: right;
+}
+.nav-item:hover{
+    background-color: lightblue;
+   
+}
+
+.card-title{
+  
+    text-align: center;
+}
+
+.card:hover .card-image img {
+    width: 30%;
+}

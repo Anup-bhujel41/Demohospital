@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="photos/logo.png">
+        <title>Demo Hospital</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+        
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src='photos/logo.png' alt='logo' width='70px' height='70px'> <span class='custom-text-size'>Hospital</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto custom-text-size">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="slidercontainer">  
+            <div class="showSlide">  
+                <img src="photos/slide1.jpg"/>  
+                <!-- <div class="content">Slider 1</div>   -->
+            </div>  
+            <div class="showSlide">  
+                <img src="photos/slide2.jpg"/>  
+                <!-- <div class="content">Slider 2</div>   -->
+            </div>  
+            <div class="showSlide"> 
+                <img src="photos/slide3.jpg"/>  
+                <!-- <div class="content">Slider 3</div>   -->
+            </div>  
+            <!-- Navigation arrows -->  
+            <a class="left" onclick="nextSlide(-1)">❮</a>  
+            <a class="right" onclick="nextSlide(1)">❯</a>  
+        </div>  
+
+
+        <!-- cards -->
+        <div class="container">
+        <div class="row ">
+            <div class="card" style="width: 25%; margin-right:110px;">
+                <img src="photos/admin.jpg" class="card-img-top" alt="..." width="100px" height="300px">
+                <div class="card-body">
+                  <a href="html/adminlogin.html"><h5 class="card-title text-center">Admin</h5></a>
+                  <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                </div>
+              </div>
+
+              <div class="card" style="width: 25%; margin-right: 110px;">
+                <img src="photos/doc1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <a href="html/doctorlogin.html"> <h5 class="card-title text-center">Doctors</h5></a>
+                  
+                  <!-- <a href="#" class="btn btn-primary">#</a> -->
+                </div>
+              </div>
+
+              <div class="card" style="width: 25%; margin-right: 60px;">
+                <img src="photos/patient1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="html/patientlogin.html"><h5 class="card-title text-center">Patients</h5></a>
+                  
+                  <!-- <a href="#" class="btn btn-primary">#</a> -->
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="js/pooper.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slide.js"></script>
+    
+    </body>
+</html>

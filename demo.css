@@ -1,0 +1,32 @@
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.vertical-nav{
+    min-width: 17rem;
+    width: 17rem;
+    height: -3rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transition: all 0.4s;
+    
+.navigator{
+    height: 3rem;
+}
+.page-content{
+    width: calc(100% -17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+
+}
+#sidebar.active{
+     margin-left: -17rem;
+
+}
+
+#content.active{
+    width: 100%;
+    margin:0;
+
+}
