@@ -30,9 +30,9 @@
     right: 0;  
     border-radius: 3px 0 0 3px;  
 }  
-    .left:hover, .right:hover {  
-        background-color: rgba(115, 115, 115, 0.8);  
-    }  
+.left:hover, .right:hover {  
+    background-color: rgba(115, 115, 115, 0.8);  
+}  
 .content {  
     color: #eff5d4;  
     font-size: 30px;  

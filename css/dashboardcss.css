@@ -1,5 +1,6 @@
 body{
     width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 .sidebar{
@@ -60,4 +61,31 @@ main.card{
 
 .card:hover .card-image img {
     width: 30%;
+}
+
+
+.navbar .icon {
+    display: none;
+}
+
+.resp-block{
+    display: block;
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar a.icon {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        display: block;
+    }
+    .resp-block {
+        display: none;
+        width: 100%;
+    }
+    .admin-main{
+        width: 100%;
+        padding: 10px;
+    }
 }
