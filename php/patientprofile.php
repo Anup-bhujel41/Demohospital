@@ -78,7 +78,10 @@
 
             <main role="main" class="col-md-12 ml-sm-auto  container">
                 <div class="admin-main">
+                
                     <div  class="profile-form" style=" margin:auto;">
+                    <h3>My Profile</h3>
+                    <hr>
 
 
                         <!-- php code -->
@@ -97,21 +100,21 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" value="<?php echo $rows["name"]; ?>"
                                     placeholder=" Name" required>
-                            </div>
+                            </div><br>
 
                             <div class="form-group">
                                 <input type="text" class="form-control" name="city"
                                     value="<?php echo $rows["address"]; ?>" placeholder="City" required>
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="address"
                                     value="<?php echo $rows["city"]; ?>" placeholder="Address" required>
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="contact"
                                     value="<?php echo $rows["contact"]; ?>" placeholder="Contact" required>
 
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <label class="block">
                                     Gender
@@ -128,7 +131,7 @@
                                         Male
                                     </label>
                                 </div>
-                            </div>
+                            </div><br>
 
                             <div class="form-group">
                                 <span class="input-icon">
@@ -138,7 +141,8 @@
                                     <!-- <i class="fa fa-envelope"></i> -->
                                 </span>
                                 <span id="user-availability-status1" style="font-size:12px;"></span>
-                            </div>
+                            </div><br>
+
                             <div class="form-group">
                                 <span class="input-icon">
                                     <input type="password" class="form-control" id="password" name="password"
@@ -146,12 +150,14 @@
                                     <!-- <i class="fa fa-lock"></i>  -->
                                 </span>
                             </div>
-                            <button type="submit" class="btn btn-primary pull-right" id="submit" name="save">
+                            <br>
+                            
+                            <button type="submit" class="btn btn-primary pull-right" id="submit" name="save" >
                                 Save
                             </button>
 
                         </form>
-                        <form method='post' action='patientdel.php'>
+                        <form method='post' action='patientdel.php' >
                         <input type="hidden" name="pid" value="<?php echo $rows['id']?>">
                             <button type="submit" class="btn btn-primary pull-right" id="submit" name="save">
                                 Delete

@@ -81,6 +81,9 @@ main.card{
 .first-card{
     margin-right: 20px;
 }
+. prffrm{
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 600px) {
     .navbar a.icon {

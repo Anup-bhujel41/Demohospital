@@ -109,34 +109,30 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" value="<?php echo $rows["name"]; ?>"
                                     placeholder="Name" required>
-                            </div>
+                            </div><br>
 
                             <div class="form-group">
                                 <input type="text" class="form-control" name="specialization"
                                     value=" <?php echo $rows["specialization"]; ?> " placeholder="Specialization"
                                     required>
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="fees"
                                     value="<?php echo $rows["fees"]; ?> " placeholder="Consulting Fess" required>
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="address"
                                     value="<?php echo $rows["address"]; ?>" placeholder="Address" required>
 
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="contact"
                                     value="<?php echo $rows["contact"]; ?>" placeholder="Contact" required>
 
-                            </div>
+                            </div><br>
 
-                            <div class="form-group">
 
-                                <input type="email" class="form-control" name="email" id="email"
-                                    value="<?php echo $rows["email"]; ?>" onBlur="userAvailability()"
-                                    placeholder="Email" required>
-                            </div>
+
                             <div class="form-group">
                                 <label class="block">
                                     Gender
@@ -153,6 +149,14 @@
                                         Male
                                     </label>
                                 </div>
+                                <br>
+
+                                <div class="form-group">
+
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        value="<?php echo $rows["email"]; ?>" onBlur="userAvailability()"
+                                        placeholder="Email" required>
+                                </div><br>
                                 <button type="submit" class="btn btn-primary pull-right" id="submit" name="save">
                                     Save
                                 </button>

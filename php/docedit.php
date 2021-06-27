@@ -15,7 +15,7 @@ if(!empty($name) || !empty($specialization) || !empty($address) || !empty($conta
     $sql ="UPDATE doctorinfo set name='$name', address='$address', specialization='$specialization', contact=$contact,gender='$gender', email='$email',fees='$fees' WHERE id=$id";
     if ($conn->query($sql) === TRUE) {
         echo "Data saved successfully";
-        header("Location:managedoctor.php");
+        header("Location:doctorprofile.php");
       } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
       }

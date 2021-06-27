@@ -106,31 +106,32 @@
   while($rows = $result->fetch_assoc())
   {
   ?>
-
+                         <form method='post' action='docedit.php'>
+                         <input type="hidden" name="id" value="<?php echo $rows['id']?>">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name"
                                     value="<?php echo $rows["name"]; ?> " placeholder="Name" required>
-                            </div>
+                            </div><br>
 
                             <div class="form-group">
                                 <input type="text" class="form-control" name="specialization"
                                     value="<?php echo $rows["specialization"]; ?> " placeholder="Specialization"
                                     required>
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="fees"
                                     value="<?php echo $rows["fees"]; ?> " placeholder="Consulting Fess" required>
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="address"
                                     value="<?php echo $rows["address"]; ?> " placeholder="Address" required>
 
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="contact"
                                     value="<?php echo $rows["contact"]; ?> " placeholder="Contact" required>
 
-                            </div>
+                            </div><br>
                             <div class="form-group">
                                 <label class="block">
                                     Gender
@@ -147,7 +148,20 @@
                                         Male
                                     </label>
                                 </div>
-                            </div>
+                            </div><br>
+                            <div class="form-group">
+                                <span class="input-icon">
+                                    <input type="text" class="form-control" name="email"
+                                        value="<?php echo $rows["email"]; ?>" id="email" onBlur="userAvailability()"
+                                        placeholder="Email" required>
+                                    <!-- <i class="fa fa-envelope"></i> -->
+                                </span>
+                                <span id="user-availability-status1" style="font-size:12px;"></span>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary pull-right" id="submit" name="save">
+                                    Save
+                                </button>
+                        </form>
 
                             <?php 
   }}
@@ -156,10 +170,10 @@
                         </table>
 
                     </div>
-
+<!-- 
                     <div class="card-body">
                         <a href="#" class="btn btn-primary">Save</a>
-                    </div>
+                    </div> -->
 
 
             </main>
