@@ -17,6 +17,9 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-dark bg-primary fixed-top flex-md-nowrap p-0 shadow">
+    <a href="javascript:void(0);" class="icon" id="myTopnav" onclick="myFunction()" style="color: white;">
+          ☰
+        </a>
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">HMS</a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap mr-auto">
@@ -29,7 +32,7 @@
     <div class="conatiner">
         <div class="row">
             <!-- sidebar -->
-            <div class="col-md-2 bg-light d-none d-md-block sidebar">
+            <div class="bg-light sidebar resp-block" id="resp-block"> 
                 <div class="left-sidebar">
                     <ul class="nav flex-column sidebar-nav">
                         <li class="nav-item">
@@ -42,7 +45,7 @@
                                 Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="p_appoint.php">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -51,7 +54,7 @@
                                 Book Appointment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="appointview.php">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -60,7 +63,7 @@
                                 Appointment History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="pat_medicalhis.php">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -73,9 +76,9 @@
             </div>
             <!-- Main -->
 
-            <main role="main" class="col-md-12 ml-sm-auto px-4 container">
+            <main role="main" class="col-md-12 ml-sm-auto  container">
                 <div class="admin-main">
-                    <div style=" width:600px; margin:auto;">
+                    <div  class="profile-form" style=" margin:auto;">
 
 
                         <!-- php code -->
@@ -182,6 +185,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+    <script> 
+      function myFunction() {
+        var x = document.getElementById("resp-block");
+        if (x.className === "col-md-12 ml-sm-auto px-md-4 container myBlock") {
+          x.style.display = "none";
+          x.className = "col-md-12 ml-sm-auto px-md-4 container";
+        } else {
+          x.style.display = "block";
+          x.className = "col-md-12 ml-sm-auto px-md-4 container myBlock";
+        }
+      }
+    </script>
 </body>
 
 </html>

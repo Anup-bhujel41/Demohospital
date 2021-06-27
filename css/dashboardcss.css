@@ -69,8 +69,17 @@ main.card{
 }
 
 .resp-block{
+    
     display: block;
     width: 20%;
+}
+
+.profile-form{
+    width:600px;
+
+}
+.first-card{
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -80,12 +89,28 @@ main.card{
         text-decoration: none;
         display: block;
     }
+    .profile-form{
+        width:200px;
+        
+    }
     .resp-block {
         display: none;
         width: 100%;
+        
+    }
+    .myBlock{
+        padding-top: 40px;
     }
     .admin-main{
         width: 100%;
         padding: 10px;
+    }
+    main{
+        padding-top: 40px;
+        
+    }
+    .first-card{
+        margin-right: 0px;
+        margin-top: 10px;
     }
 }

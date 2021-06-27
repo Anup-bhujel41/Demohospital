@@ -18,6 +18,9 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-dark bg-primary fixed-top flex-md-nowrap p-0 shadow">
+        <a href="javascript:void(0);" class="icon" id="myTopnav" onclick="myFunction()" style="color: white;">
+            ☰
+        </a>
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">HMS</a>
         <!-- <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap mr-auto">
@@ -30,11 +33,11 @@
     <div class="conatiner">
         <div class="row">
             <!-- sidebar -->
-            <div class="col-md-2 bg-light d-none d-md-block sidebar">
+            <div class="bg-light sidebar resp-block" id="resp-block">
                 <div class="left-sidebar">
                     <ul class="nav flex-column sidebar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="admindashboard.php">
+                            <a class="nav-link active" href="../html/doctordashboard.html">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -43,16 +46,16 @@
                                 Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="managedoctor.php">
+                            <a class="nav-link" href="manageappointment.php">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" />
                                 </svg>
-                                Doctor</a>
+                                Appointment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="managepatient.php">
+                            <a class="nav-link" href="doc_patview.php">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -61,7 +64,7 @@
                                 Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ad_medicalhis.php">
+                            <a class="nav-link" href="medical_history.php">
                                 <svg class="bi bi-chevron-right" width="24" height="24" viewBox="0 0 20 20"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -87,7 +90,7 @@
 
                         </div>
                         <form action="upd_report.php" method="post">
-                        
+
                             <fieldset>
                                 <input type="hidden" name="id" value=<?php echo $_GET['id']?>>
                                 <?php
@@ -141,26 +144,29 @@
                                         Diagnosis:
                                     </label>
                                     <input type="text" id="describe" name="diagnosis"
-                                         value="<?php echo $rows['diagnosis']?>">
+                                        value="<?php echo $rows['diagnosis']?>">
 
                                     <label for="BP">
                                         Blood Pressure*:
                                     </label>
-                                    <input type="int" name="bp" value="<?php echo $rows['blood_pressure']?>" required></input>
+                                    <input type="int" name="bp" value="<?php echo $rows['blood_pressure']?>"
+                                        required></input>
                                     <br>
                                     <br>
 
                                     <label for="Blood-Group">
                                         Blood-Group*:
                                     </label>
-                                    <input type="text" name="bg" value="<?php echo $rows['blood_group']?>" required></input>
+                                    <input type="text" name="bg" value="<?php echo $rows['blood_group']?>"
+                                        required></input>
                                     <br>
 
 
                                     <label for="Medication">
                                         Medication*:
                                     </label>
-                                    <input type="text" name="medication" value="<?php echo $rows['medication']?>" required></input>
+                                    <input type="text" name="medication" value="<?php echo $rows['medication']?>"
+                                        required></input>
                                     <br>
 
 
@@ -173,7 +179,8 @@
                                     <label for=" Revisit-Date">
                                         Revisit-Date*:
                                     </label>
-                                    <input type="date" name="revisit_date" value="<?php echo $rows['revisit_date']?>" required></input>
+                                    <input type="date" name="revisit_date" value="<?php echo $rows['revisit_date']?>"
+                                        required></input>
                                     <br>
 
 
@@ -211,6 +218,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("resp-block");
+        if (x.className === "col-md-12 ml-sm-auto px-md-4 container myBlock") {
+            x.style.display = "none";
+            x.className = "col-md-12 ml-sm-auto px-md-4 container";
+        } else {
+            x.style.display = "block";
+            x.className = "col-md-12 ml-sm-auto px-md-4 container myBlock";
+        }
+    }
+    </script>
 </body>
 
 </html>

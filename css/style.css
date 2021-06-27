@@ -1,4 +1,4 @@
-.custom-text-size{
+/* .custom-text-size{
     font-size: 24px;
 }
 
@@ -98,3 +98,280 @@
 .main-login{
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+
+}
+/* .card-secnd{
+    width: 25%; 
+    margin-right:200px;
+} */ */
+
+
+
+/* new css */
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    /*background-color: rgb(82, 152, 209);*/
+}
+
+
+
+.navbar{
+    padding: .8rem;
+    background-color: rgb(57, 190, 243);
+}
+
+
+.nav-link{
+    font-size: 1.1em !important;
+    font-family: Verdana;
+    
+}
+.nav-item{
+    text-align: end;
+    text-transform: uppercase;
+    text-indent: 2em;
+ 
+}
+
+
+.custom-text-size{
+    font-size: 24px;
+}
+
+
+
+.carousel-item {  
+    display: none 
+ 
+}  
+.carousel-item img {  
+    width: 100%;  
+    height: 450px;
+}  
+.carousel_slide_carousel-fade {  
+    position: relative;  
+    margin: auto;
+}  
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.carousel-caption h1{
+    font-size: 500%;
+    text-transform: uppercase;
+    text-decoration: double rgb(17, 230, 230);
+    text-shadow: 1px 1px 10px #000;
+}
+
+
+
+
+
+
+/*
+.active {  
+    background-color: #717171;  
+}  
+/* Fading animation */  
+/*.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+} */ 
+
+.container{
+    margin-top: 20px;
+    
+}
+
+.card-body{
+    box-shadow: 0 0 20px 7px rgb(30, 34, 34);
+}
+.card-text-center{
+    height: 1rem;
+    margin: 20px 10px;
+    width:100px; 
+    padding-top: 0rem;
+    padding-right: 5rem;  
+    margin-right:110px;
+    
+}
+
+.card-body{
+    color: rgb(195, 233, 220);
+    font-size: 15;
+    margin-top: auto;
+}
+.card-body a:hover{
+    color: rgb(49, 209, 75);
+}
+
+
+.card-title{
+    text-decoration:none;
+
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+.welcome{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    font-size: medium;
+}
+.welcome hr{
+    border-top: 2px solid #b4b4b4;
+    width: 100%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+
+}
+.lead{
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+
+.form-login{
+    text-align: center;
+}
+
+.maintitle{
+    text-align: center;
+    text-shadow: 5em rgb(15, 12, 20);
+
+}
+
+.form-group{
+    text-align: center;
+}
+
+.main-login{
+    text-align: center;
+}
+.login{
+    /* background-color: rgb(36, 61, 53); */
+}
+
+
+
+ 
+#intro {
+    background-image: url("https://thumbs.dreamstime.com/b/international-doctor-team-hospital-medical-staff-mixed-race-asian-caucasian-nurse-meeting-clinic-personnel-wearing-face-mask-177303477.jpg");
+    height: 100vh;
+    width:100%;
+  } 
+/* 
+  .caption-pic{
+      opacity: 0;
+
+  } */
+  /* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+  } */
+
+  /* Height for devices larger than 576px */
+  @media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+
+
+
+
+ 
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(61, 106, 128);
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: white;
+      transform: rotateY(180deg);
+    }
+   .loogin{
+       margin-left: 100px;
+   }
