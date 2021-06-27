@@ -281,24 +281,28 @@ html, body
 
 
 
- 
+/*  
 #intro {
     background-image: url("https://thumbs.dreamstime.com/b/international-doctor-team-hospital-medical-staff-mixed-race-asian-caucasian-nurse-meeting-clinic-personnel-wearing-face-mask-177303477.jpg");
     height: 100vh;
     width:100%;
-  } 
+  }  */
 /* 
   .caption-pic{
       opacity: 0;
 
   } */
-  /* .centered {
+  #introo{
+      height: 100vh;
+      width: 100%;
+  }
+   .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 250px;
-  } */
+    margin-top: 150px;
+  } 
 
   /* Height for devices larger than 576px */
   @media (min-width: 992px) {
