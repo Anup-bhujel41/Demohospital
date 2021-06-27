@@ -83,10 +83,23 @@
                     <hr>
                     <form method="post" action="admin_updappointment.php">
                         <input type="hidden" name="appoint_id" value=<?php echo $_GET['id']?>>
+                        <?php
+            $conn = mysqli_connect('127.0.0.1:3306','root','','hms') or die('Unable To connect');
+           
+            $sql="SELECT * FROM appointment where id=".$_GET['id'];
+            $result=$conn->query($sql);
+            // echo $result;
+
+            if($result->num_rows > 0){
+            while($rows = $result->fetch_assoc())
+            {
+                $active_status=$rows['status'];
+            }}
+            ?>
                         <select name='status'>
-                            <option value=0>Pending</option>
-                            <option value=1>Approved</option>
-                            <option value=2>Rejected</option>
+                            <option value=0 <?php echo ($active_status==0) ? "selected":''?>>Pending</option>
+                            <option value=1 <?php echo ($active_status==1) ? "selected":''?>>Approved</option>
+                            <option value=2 <?php echo ($active_status==2) ? "selected":''?>>Rejected</option>
                         </select>
                         <button type="submit" name="submit">Submit</button>
                     </form>
